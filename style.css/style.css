@@ -2,3 +2,20 @@
   color: red;
   font-size: 50px;
 }
+
+.accordion-button::after {
+  background-image: url(../img/plus.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/minus.png);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(128, 128, 128, 0.315);
+  color: black;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
