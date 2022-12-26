@@ -1,5 +1,5 @@
 .logo {
-  color: red;
+  color: #009cdc;
   font-size: 50px;
 }
 
@@ -16,6 +16,37 @@
   color: black;
 }
 
-button:focus:not(:focus-visible) {
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.card-body h5 span {
+  margin-left: 150px;
+  color: green;
+}
+
+.accordion-item {
+  border: var(--bs-accordion-border-width) solid black;
+}
+
+.navbar-toggler {
+  border: 2px solid var(--bs-cyan);
+}
+
+.navbar-toggler:focus {
   outline: none;
+  box-shadow: none;
+}
+
+.footer-navbar__icon {
+  width: 50px;
+  height: 50px;
+  color: var(--bs-white);
+  margin: 5px 15px;
+}
+
+.btn {
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
